@@ -40,6 +40,66 @@
 	background-color: lightgray!important;
 }
 
+/* Technical Skills & Work Sections */
+#skills {
+	background: #fdfbff;
+}
+
+#skills h1 {
+	font-weight: 700;
+	color: #111827;
+}
+
+#skills .text-muted {
+	color: #6b7280 !important;
+}
+
+#skills .card-title {
+	font-weight: 600;
+	border-bottom: 2px solid #fc6cbe;
+	padding-bottom: 0.4rem;
+	margin-bottom: 1rem;
+}
+
+#projects {
+	padding-top: 4rem;
+	padding-bottom: 4rem;
+	/* Match About Me background so the sections complement each other */
+	background-color: lightgray;
+	border-top: 2px solid rgba(0, 0, 0, 0.03);
+}
+
+#projects h1 {
+	font-weight: 700;
+	color: #111827;
+}
+
+#projects .card {
+	border-radius: 16px;
+	overflow: hidden;
+	transition: transform 0.25s ease, box-shadow 0.25s ease;
+	box-shadow: 0 6px 14px rgba(15, 23, 42, 0.08);
+}
+
+#projects .card img {
+	transition: transform 0.3s ease;
+}
+
+#projects .card:hover {
+	transform: translateY(-8px);
+	box-shadow: 0 18px 35px rgba(15, 23, 42, 0.25);
+}
+
+#projects .card:hover img {
+	transform: scale(1.03);
+}
+
+#projects .like {
+	border-radius: 12px;
+	background: linear-gradient(90deg, #fc6cbe, #f973b8);
+	color: #ffffff;
+}
+
 #get {
 	background-color: lightgray;
 }
@@ -48,6 +108,28 @@
 #fullstack,
 #learn {
 	opacity: 1.0;
+}
+
+#learn {
+	display: inline-block;
+	padding: 0.4rem 1.2rem;
+	border-radius: 999px;
+	border: none;
+	background-color: rgba(15, 23, 42, 0.85);
+	font-weight: 500;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+	font-size: 0.8rem;
+	transition: background 0.25s ease, color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+a:hover #learn {
+	background-color: #111827; /* dark navy on hover */
+	color: #ffffff;
+	transform: translateY(2px) scale(1.03);
+	box-shadow: 0 0 0 2px #fc6cbe, 0 10px 22px rgba(0, 0, 0, 0.55);
+	text-decoration: none;
 }
 /*
 #name {
@@ -80,6 +162,37 @@
     /*opacity: 1.0;*/
 }
 
+/* Services (My Services) */
+#home .service-card {
+	background-color: #ffffff;
+	border-radius: 16px;
+	box-shadow: 0 8px 20px rgba(15, 23, 42, 0.06);
+	padding: 2.5rem 1.5rem;
+	transition: transform 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease;
+	cursor: default;
+}
+
+#home .service-card img {
+	transition: transform 0.25s ease;
+}
+
+#home .service-card p {
+	margin-top: 0.75rem;
+	font-weight: 600;
+	letter-spacing: 0.05em;
+	color: #1f2933;
+}
+
+#home .service-card:hover {
+	transform: translateY(-8px);
+	box-shadow: 0 18px 35px rgba(15, 23, 42, 0.2);
+	background-color: #fdf2ff;
+}
+
+#home .service-card:hover img {
+	transform: scale(1.05);
+}
+
 #icon {
 	color: #d30c76;
 }
@@ -89,11 +202,21 @@
 }
 
 .view {
-	background-color: #fc6cbe;
+	background-color: #374151; /* dark gray before hover */
+	border-radius: 999px;
+	border: none;
+	font-weight: 600;
+	letter-spacing: 0.03em;
+	box-shadow: 0 10px 25px rgba(252, 108, 190, 0.45);
+	padding: 0.75rem 1.5rem;
+	text-decoration: none;
 }
 
 .view:hover {
-	background-color: black;
+	background: linear-gradient(135deg, #fc6cbe, #f973b8);
+	box-shadow: 0 8px 18px rgba(15, 23, 42, 0.4);
+	transform: translateY(-1px);
+	text-decoration: none;
 }
 
 #send:hover {
@@ -158,6 +281,96 @@
 }
 #download:hover {
 	background-color: black;
+}
+
+#skills .card {
+	transition: transform 0.25s ease, box-shadow 0.25s ease;
+	border-radius: 16px;
+}
+
+#skills .card:hover {
+	transform: translateY(-6px);
+	box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+#skills .list-group-item {
+	background-color: #f8fafc;
+	border-radius: 10px;
+	margin-bottom: 0.6rem;
+	padding: 0.65rem 1rem;
+	display: flex;
+	align-items: center;
+	transition: background-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+	box-shadow: 0 0 0 rgba(15, 23, 42, 0);
+}
+
+#skills .list-group-item:hover {
+	background-color: #ffffff;
+	box-shadow: 0 8px 20px rgba(15, 23, 42, 0.08);
+	transform: translateY(-2px);
+}
+
+#skills .list-group-item span {
+	font-size: 0.95rem;
+	font-weight: 500;
+	color: #1f2933;
+}
+
+#skills img {
+	max-width: 32px;
+	height: auto;
+}
+
+/* About & Skills responsive tweaks */
+#about h1 {
+	font-size: 2.2rem;
+}
+
+@media only screen and (max-width: 767.98px) {
+	#about {
+		padding: 2.5rem 1.5rem !important;
+	}
+
+	#about .row {
+		text-align: center;
+	}
+
+	#about h1 {
+		text-align: center;
+		font-size: 1.75rem;
+		margin-top: 1.5rem;
+	}
+
+	#about p {
+		font-size: 0.9rem;
+		line-height: 1.6;
+	}
+
+	#skills {
+		padding: 2.5rem 1.25rem !important;
+	}
+
+	#skills .card {
+		margin-bottom: 1rem;
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
+	#about p {
+		font-size: 0.95rem;
+		line-height: 1.7;
+	}
+
+	#skills .card-title {
+		font-size: 1rem;
+	}
+}
+
+@media only screen and (min-width: 992px) {
+	#about p {
+		font-size: 1rem;
+		line-height: 1.8;
+	}
 }
 
 #name,
